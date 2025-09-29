@@ -39,6 +39,11 @@ function App() {
     }
   };
 
+  const navigateToSpecificQuestion = (questionIndex: number) => {
+    if (questionIndex >= 0 && questionIndex < examQuestions.length) {
+      setCurrentQuestion(questionIndex);
+    }
+  };
   const calculateScore = () => {
     let totalScore = 0;
     
@@ -126,6 +131,7 @@ function App() {
               onPrevious={() => navigateToQuestion('prev')}
               onNext={() => navigateToQuestion('next')}
               onSubmit={handleConfirmSubmit}
+              onNavigateToQuestion={navigateToSpecificQuestion}
             />
           </div>
         </div>

@@ -8,6 +8,7 @@ interface NavigationPanelProps {
   onPrevious: () => void;
   onNext: () => void;
   onSubmit: () => void;
+  onNavigateToQuestion: (questionIndex: number) => void;
 }
 
 export const NavigationPanel: React.FC<NavigationPanelProps> = ({
@@ -17,6 +18,7 @@ export const NavigationPanel: React.FC<NavigationPanelProps> = ({
   onPrevious,
   onNext,
   onSubmit
+  onNavigateToQuestion
 }) => {
   const isFirstQuestion = currentQuestion === 0;
   const isLastQuestion = currentQuestion === totalQuestions - 1;
@@ -76,6 +78,7 @@ export const NavigationPanel: React.FC<NavigationPanelProps> = ({
           {Array.from({ length: totalQuestions }, (_, index) => (
             <div
               key={index}
+              onClick={() => onNavigateToQuestion(index)}
               className={`w-8 h-8 rounded text-xs font-medium flex items-center justify-center cursor-pointer transition-colors ${
                 index === currentQuestion
                   ? 'bg-blue-600 text-white'
