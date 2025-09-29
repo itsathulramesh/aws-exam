@@ -17,7 +17,7 @@ export const NavigationPanel: React.FC<NavigationPanelProps> = ({
   answers,
   onPrevious,
   onNext,
-  onSubmit
+  onSubmit,
   onNavigateToQuestion
 }) => {
   const isFirstQuestion = currentQuestion === 0;
