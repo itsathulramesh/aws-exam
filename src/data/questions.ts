@@ -1,1051 +1,995 @@
 import { Question } from '../types/exam';
 
 export const examQuestions: Question[] = [
-  // Cloud Concepts (24% - 16 questions, 3 unscored)
+
+  // ======================
+  // 🌩 CLOUD CONCEPTS (16)
+  // ======================
   {
     id: 1,
     topic: "Cloud Concepts",
-    question: "What are the main benefits of cloud computing?",
+    question: "Which statement best describes the cloud computing model?",
     options: [
-      "Trade capital expense for variable expense",
-      "Benefit from massive economies of scale", 
-      "Stop guessing about capacity",
-      "Increase speed and agility",
-      "All of the above"
+      "Owning and maintaining your own data centers",
+      "Renting computing resources on demand from a provider",
+      "Installing applications locally on every user’s machine",
+      "Using only physical servers without virtualization"
     ],
-    correctAnswers: [4],
+    correctAnswers: [1],
     multipleChoice: false,
     marks: 20,
-    explanation: "Cloud computing provides all these benefits: cost optimization, scalability, agility, and eliminates capacity planning guesswork."
+    explanation: "Cloud computing lets users rent computing power and storage as needed, avoiding ownership costs."
   },
   {
     id: 2,
     topic: "Cloud Concepts",
-    question: "Which of the following are characteristics of cloud computing? (Select TWO)",
+    question: "What is elasticity in AWS?",
     options: [
-      "On-demand self-service",
-      "Limited network access", 
-      "Resource pooling",
-      "Manual scaling only",
-      "Single-tenant architecture"
+      "The ability to automatically adjust resources to match demand",
+      "Storing data on physical disks only",
+      "Manual resource allocation",
+      "A backup scheduling feature"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "On-demand self-service and resource pooling are key characteristics of cloud computing according to NIST definition."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 25,
+    explanation: "Elasticity refers to automatically scaling resources up or down based on changing demand."
   },
   {
     id: 3,
     topic: "Cloud Concepts",
-    question: "What is the AWS Well-Architected Framework primarily designed for?",
+    question: "Which of the following are benefits of cloud computing? (Select TWO)",
     options: [
-      "Cost optimization only",
-      "Security best practices only",
-      "Building and running workloads in the cloud",
-      "Network configuration",
-      "Database design"
+      "Trade capital expense for variable expense",
+      "Manual scaling only",
+      "Stop guessing about capacity",
+      "Slow global reach"
     ],
-    correctAnswers: [2],
-    multipleChoice: false,
-    marks: 0,
-    explanation: "The AWS Well-Architected Framework provides guidance for building secure, high-performing, resilient, and efficient infrastructure."
+    correctAnswers: [0, 2],
+    multipleChoice: true,
+    marks: 20,
+    explanation: "Cloud computing replaces capital expenses and allows automatic scaling as needed."
   },
   {
     id: 4,
-    topic: "Cloud Concepts", 
-    question: "Which deployment models are part of cloud computing? (Select THREE)",
+    topic: "Cloud Concepts",
+    question: "What does ‘agility’ mean in cloud computing?",
     options: [
-      "Public cloud",
-      "Private cloud",
-      "Hybrid cloud", 
-      "Community cloud",
-      "Personal cloud"
+      "Deploying resources quickly to respond to business needs",
+      "Reducing hardware costs only",
+      "Migrating databases",
+      "Purchasing long-term contracts"
     ],
-    correctAnswers: [0, 1, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "Public, private, and hybrid are the three main cloud deployment models recognized by NIST."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 15,
+    explanation: "Agility refers to quickly provisioning and de-provisioning resources to innovate faster."
   },
   {
     id: 5,
     topic: "Cloud Concepts",
-    question: "What is elasticity in cloud computing?",
+    question: "Which are examples of cloud deployment models? (Select THREE)",
     options: [
-      "The ability to stretch physical servers",
-      "The ability to scale resources up or down automatically based on demand",
-      "The ability to backup data automatically", 
-      "The ability to encrypt data",
-      "The ability to replicate data"
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Local Cloud"
     ],
-    correctAnswers: [1],
-    multipleChoice: false,
+    correctAnswers: [0, 1, 2],
+    multipleChoice: true,
     marks: 20,
-    explanation: "Elasticity refers to the automatic scaling of resources to match current demand levels."
+    explanation: "NIST defines Public, Private, and Hybrid as the main cloud deployment models."
   },
   {
     id: 6,
     topic: "Cloud Concepts",
-    question: "Which are the six pillars of the AWS Well-Architected Framework? (Select TWO)",
+    question: "What is the AWS Well-Architected Framework used for?",
     options: [
-      "Operational Excellence",
-      "Data Protection",
-      "Reliability", 
-      "Network Security",
-      "Resource Management"
+      "Designing secure and efficient cloud architectures",
+      "Creating billing reports",
+      "Managing IAM users",
+      "Setting EC2 pricing"
     ],
-    correctAnswers: [0, 2], 
-    multipleChoice: true,
+    correctAnswers: [0],
+    multipleChoice: false,
     marks: 20,
-    explanation: "The six pillars are: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability."
+    explanation: "The Well-Architected Framework helps design secure, reliable, efficient, and cost-effective systems."
   },
   {
     id: 7,
     topic: "Cloud Concepts",
-    question: "What is the main advantage of using cloud computing over traditional on-premises infrastructure?",
+    question: "Which statement best defines scalability?",
     options: [
-      "Higher upfront costs",
-      "Less scalability",
-      "Reduced operational overhead",
-      "Mandatory long-term contracts", 
-      "Limited geographic reach"
+      "Ability to handle increasing workloads by adding resources",
+      "Ability to replicate data automatically",
+      "Ability to store backups",
+      "Ability to encrypt data"
     ],
-    correctAnswers: [2],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Cloud computing reduces operational overhead by eliminating the need to manage physical infrastructure."
+    explanation: "Scalability means increasing resource capacity to meet growing demand."
   },
   {
     id: 8,
     topic: "Cloud Concepts",
-    question: "What does 'agility' mean in cloud computing context?",
+    question: "Which term describes resources automatically adjusting to workload changes?",
     options: [
-      "Physical flexibility of servers",
-      "Speed of data transfer",
-      "Ability to quickly provision and de-provision resources",
-      "Network latency optimization",
-      "Database query speed"
+      "Elasticity",
+      "Agility",
+      "Durability",
+      "Latency"
     ],
-    correctAnswers: [2],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 0,
-    explanation: "Agility in cloud computing refers to the ability to rapidly deploy, modify, and scale resources as needed."
+    explanation: "Elasticity enables automatic scaling to match workload demands."
   },
   {
     id: 9,
-    topic: "Cloud Concepts", 
-    question: "Which factors should be considered when choosing a cloud deployment model? (Select TWO)",
+    topic: "Cloud Concepts",
+    question: "Which AWS pillar focuses on running workloads effectively and efficiently?",
     options: [
-      "Security requirements",
-      "Color of servers",
-      "Compliance needs",
-      "Office location",
-      "Employee count"
+      "Operational Excellence",
+      "Security",
+      "Reliability",
+      "Cost Optimization"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "Security requirements and compliance needs are critical factors in choosing between public, private, or hybrid cloud."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 15,
+    explanation: "Operational Excellence emphasizes operations, monitoring, and continuous improvement."
   },
   {
     id: 10,
     topic: "Cloud Concepts",
-    question: "What is the primary benefit of economies of scale in cloud computing?",
+    question: "What is high availability in AWS?",
     options: [
-      "Increased physical size of data centers",
-      "Lower costs due to shared infrastructure across many customers",
-      "Faster internet connections",
-      "More employees",
-      "Larger servers"
+      "Keeping applications running despite failures",
+      "Running applications only during business hours",
+      "Deploying a single EC2 instance",
+      "Manual failover setup"
     ],
-    correctAnswers: [1], 
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Economies of scale allow cloud providers to reduce costs by sharing infrastructure costs across millions of customers."
+    marks: 25,
+    explanation: "High availability ensures continuous operation using multiple Availability Zones."
   },
   {
     id: 11,
     topic: "Cloud Concepts",
-    question: "What is meant by 'high availability' in cloud computing?",
+    question: "What type of cloud model shares infrastructure across multiple customers?",
     options: [
-      "Servers are physically tall",
-      "Systems remain operational even when components fail",
-      "Services are expensive",
-      "Data is stored at high altitudes", 
-      "Servers run at high speed"
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Local Cloud"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "High availability ensures systems continue operating even when individual components experience failures."
+    marks: 10,
+    explanation: "Public Cloud allows shared resources managed by the provider."
   },
   {
     id: 12,
     topic: "Cloud Concepts",
-    question: "Which statement best describes cloud computing scalability?",
+    question: "Which AWS service provides global infrastructure?",
     options: [
-      "The ability to weigh cloud resources",
-      "The ability to increase or decrease resources based on demand",
-      "The ability to physically move servers",
-      "The ability to change server colors",
-      "The ability to rename resources"
+      "AWS Regions and Availability Zones",
+      "IAM",
+      "Route 53",
+      "S3 Glacier"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Scalability allows resources to be adjusted up or down to match workload demands efficiently."
+    marks: 25,
+    explanation: "AWS Regions and Availability Zones deliver global and redundant infrastructure."
   },
   {
     id: 13,
     topic: "Cloud Concepts",
-    question: "What is a key characteristic of on-demand self-service in cloud computing?",
+    question: "Which characteristic describes on-demand self-service?",
     options: [
-      "Requires calling customer support for each request",
-      "Users can provision resources automatically without human interaction",
-      "Only available during business hours",
-      "Requires physical presence at data center",
-      "Limited to specific user roles only"
+      "Provisioning resources automatically without human help",
+      "Manual resource approval",
+      "Physical resource ownership",
+      "Customer support-based provisioning"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 0,
-    explanation: "On-demand self-service allows users to provision computing resources automatically as needed without human intervention."
+    explanation: "Users can self-provision AWS resources instantly as needed."
   },
   {
     id: 14,
     topic: "Cloud Concepts",
-    question: "Which are benefits of using cloud computing? (Select TWO)",
+    question: "Which factor should influence a cloud deployment choice? (Select TWO)",
     options: [
-      "Go global in minutes",
-      "Increase infrastructure maintenance",
-      "Stop spending money on running and maintaining data centers",
-      "Decrease security",
-      "Reduce deployment speed"
+      "Compliance requirements",
+      "Geographical latency",
+      "Server color",
+      "Employee names"
     ],
-    correctAnswers: [0, 2],
+    correctAnswers: [0, 1],
     multipleChoice: true,
-    marks: 20,
-    explanation: "Cloud computing enables rapid global deployment and eliminates the need for physical data center maintenance."
+    marks: 15,
+    explanation: "Security, compliance, and latency affect the right cloud deployment model."
   },
   {
     id: 15,
     topic: "Cloud Concepts",
-    question: "What does 'fault tolerance' mean in cloud computing?",
+    question: "Which advantage does cloud computing provide over traditional IT?",
     options: [
-      "Tolerance for user mistakes",
-      "System's ability to continue operating despite component failures",
-      "Acceptance of high costs",
-      "Patience with slow performance",
-      "Tolerance for security breaches"
+      "Reduced operational overhead",
+      "Fixed costs",
+      "Long procurement times",
+      "Hardware ownership"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Fault tolerance ensures systems continue functioning even when individual components fail or experience issues."
+    explanation: "AWS reduces operational overhead by managing infrastructure for you."
   },
   {
     id: 16,
     topic: "Cloud Concepts",
-    question: "What is the primary advantage of resource pooling in cloud computing?",
+    question: "Which term describes the AWS pricing model?",
     options: [
-      "Swimming pools for employees",
-      "Shared computing resources serve multiple customers efficiently",
-      "Physical storage of equipment",
-      "Collection of user data",
-      "Gathering of network cables"
+      "Pay-as-you-go",
+      "Fixed monthly subscription",
+      "Annual commitment",
+      "Tiered only"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Resource pooling allows cloud providers to efficiently serve multiple customers using shared computing resources."
+    marks: 0,
+    explanation: "AWS uses a pay-as-you-go model for flexible cost control."
   },
 
-  // Security and Compliance (30% - 19 questions, 5 unscored)
+  // ==============================
+  // 🔒 SECURITY AND COMPLIANCE (20)
+  // ==============================
   {
     id: 17,
     topic: "Security and Compliance",
-    question: "What is the AWS Shared Responsibility Model?",
+    question: "What does the AWS Shared Responsibility Model define?",
     options: [
-      "AWS is responsible for everything",
-      "Customer is responsible for everything", 
-      "AWS secures the infrastructure, customer secures their data and applications",
-      "Both AWS and customer have no security responsibilities",
-      "Only applies to EC2 instances"
+      "Division of security duties between AWS and customers",
+      "Who pays for compute resources",
+      "Network latency responsibilities",
+      "Legal agreements"
     ],
-    correctAnswers: [2],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS manages security 'of' the cloud (infrastructure), while customers manage security 'in' the cloud (data, applications)."
+    marks: 25,
+    explanation: "AWS secures the cloud infrastructure; customers secure data and configurations."
   },
   {
     id: 18,
     topic: "Security and Compliance",
-    question: "Which AWS services help with identity and access management? (Select TWO)",
+    question: "Which AWS service helps detect malicious activity?",
     options: [
-      "AWS IAM",
-      "AWS S3",
-      "AWS Cognito", 
-      "AWS Lambda",
-      "AWS EC2"
+      "AWS GuardDuty",
+      "AWS WAF",
+      "AWS CloudFormation",
+      "AWS Config"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "IAM manages AWS resource access, while Cognito handles user identity for applications."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 25,
+    explanation: "GuardDuty monitors AWS accounts for suspicious or unauthorized activity."
   },
   {
     id: 19,
     topic: "Security and Compliance",
-    question: "What is the principle of least privilege in AWS IAM?",
+    question: "Which AWS service provides DDoS protection?",
     options: [
-      "Give users maximum permissions",
-      "Give users only the permissions they need to perform their job",
-      "Give all users administrator access",
-      "Remove all permissions from users",
-      "Only applies to root users"
+      "AWS Shield",
+      "AWS WAF",
+      "CloudFront",
+      "IAM"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Least privilege means granting only the minimum permissions necessary for users to complete their tasks."
+    explanation: "AWS Shield protects against DDoS attacks at network and application levels."
   },
   {
     id: 20,
     topic: "Security and Compliance",
-    question: "Which AWS service provides DDoS protection?",
+    question: "What is the purpose of IAM policies?",
     options: [
-      "AWS CloudFront",
-      "AWS Shield", 
-      "AWS WAF",
-      "AWS Inspector",
-      "AWS GuardDuty"
+      "Define permissions for users and roles",
+      "Launch EC2 instances",
+      "Encrypt data in S3",
+      "Set budgets"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Shield provides DDoS protection, with Shield Standard included free and Shield Advanced offering enhanced protection."
+    marks: 15,
+    explanation: "IAM policies specify what actions users and roles can perform."
   },
   {
     id: 21,
     topic: "Security and Compliance",
-    question: "What is AWS CloudTrail primarily used for?",
+    question: "What should you do if your access keys are compromised?",
     options: [
-      "Load balancing",
-      "API logging and monitoring",
-      "Content delivery",
-      "Database management",
-      "File storage"
+      "Rotate and delete old keys immediately",
+      "Ignore it",
+      "Change AWS Region",
+      "Use same keys after 24 hours"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 0,
-    explanation: "CloudTrail records API calls made on your account and provides audit trails for compliance and security analysis."
+    explanation: "Always rotate and delete compromised keys to prevent misuse."
   },
   {
     id: 22,
     topic: "Security and Compliance",
-    question: "Which AWS service helps detect threats and protect AWS accounts? (Select TWO)",
+    question: "Which service manages encryption keys?",
     options: [
-      "AWS GuardDuty",
+      "AWS KMS",
+      "AWS IAM",
       "AWS EC2",
-      "AWS Inspector",
-      "AWS S3", 
-      "AWS Lambda"
+      "AWS Inspector"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
+    correctAnswers: [0],
+    multipleChoice: false,
     marks: 20,
-    explanation: "GuardDuty provides threat detection, while Inspector assesses applications for security vulnerabilities."
+    explanation: "KMS manages cryptographic keys for AWS resources and apps."
   },
   {
     id: 23,
     topic: "Security and Compliance",
-    question: "What is AWS KMS used for?",
+    question: "Which service continuously monitors configuration compliance?",
     options: [
-      "Key management and encryption",
-      "Network monitoring",
-      "Load balancing",
-      "Database queries",
-      "File compression"
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS Shield"
     ],
     correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Key Management Service (KMS) creates and manages encryption keys for AWS services and applications."
+    marks: 25,
+    explanation: "AWS Config tracks resource configurations and compliance over time."
   },
   {
     id: 24,
     topic: "Security and Compliance",
-    question: "What is the AWS root account?",
+    question: "What is AWS Artifact used for?",
     options: [
-      "A regular user account",
-      "The initial account created when you sign up for AWS",
-      "A backup account",
-      "A temporary account",
-      "A service account only"
+      "Access compliance reports and agreements",
+      "Monitor billing usage",
+      "Create CloudFormation stacks",
+      "Detect malware"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "The root account is the initial account with complete access to all AWS services and resources in the account."
+    marks: 10,
+    explanation: "Artifact gives access to AWS compliance and audit documents."
   },
   {
     id: 25,
     topic: "Security and Compliance",
-    question: "Which security best practices should be followed for the AWS root account? (Select TWO)",
+    question: "What is AWS WAF used for?",
     options: [
-      "Use it for daily operations",
-      "Enable multi-factor authentication (MFA)",
-      "Share credentials with team members",
-      "Create strong, unique password",
-      "Disable it completely"
+      "Protecting web applications from common exploits",
+      "Load balancing",
+      "Managing DNS",
+      "Hosting files"
     ],
-    correctAnswers: [1, 3],
-    multipleChoice: true,
-    marks: 0,
-    explanation: "Root account should have MFA enabled and a strong password, but should not be used for daily operations."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 20,
+    explanation: "AWS WAF filters HTTP traffic and prevents web-based attacks."
   },
   {
     id: 26,
     topic: "Security and Compliance",
-    question: "What is AWS WAF designed to protect against?",
+    question: "Which principle helps minimize risk by limiting permissions?",
     options: [
-      "DDoS attacks only",
-      "Web application attacks",
-      "Email spam",
-      "Database corruption",
-      "Network latency"
+      "Least Privilege",
+      "Root Access",
+      "Separation of Duties",
+      "High Availability"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS WAF (Web Application Firewall) protects web applications from common web exploits and attacks."
+    marks: 15,
+    explanation: "Least Privilege ensures users only have necessary permissions."
   },
   {
     id: 27,
     topic: "Security and Compliance",
-    question: "What is the purpose of AWS Config?",
+    question: "Which AWS tool records account API activity?",
     options: [
-      "Configure network settings",
-      "Track resource configurations and compliance",
-      "Set up user accounts",
-      "Manage billing",
-      "Monitor application performance"
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS Inspector",
+      "AWS Trusted Advisor"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Config tracks resource configurations and evaluates them against compliance rules and best practices."
+    marks: 25,
+    explanation: "CloudTrail logs AWS API calls for auditing and governance."
   },
   {
     id: 28,
     topic: "Security and Compliance",
-    question: "Which is a key benefit of AWS Identity and Access Management (IAM)?",
+    question: "Which AWS service identifies security vulnerabilities automatically?",
     options: [
-      "Automatic scaling",
-      "Fine-grained access control",
-      "Data backup",
-      "Load balancing",
-      "Content delivery"
+      "AWS Inspector",
+      "AWS Shield",
+      "AWS WAF",
+      "AWS Cognito"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "IAM provides fine-grained access control, allowing precise permissions management for users and resources."
+    marks: 0,
+    explanation: "AWS Inspector scans workloads for vulnerabilities and best practice gaps."
   },
   {
     id: 29,
     topic: "Security and Compliance",
-    question: "What should you do if you suspect your AWS credentials have been compromised?",
+    question: "What should you enable for root account protection?",
     options: [
-      "Wait and monitor",
-      "Change passwords and rotate access keys immediately",
-      "Delete the account",
-      "Contact local authorities",
-      "Ignore if no damage is visible"
+      "MFA (Multi-Factor Authentication)",
+      "Default password rotation",
+      "Role-based access",
+      "Network ACLs"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "Immediately change passwords and rotate access keys to prevent unauthorized access to your AWS resources."
+    marks: 20,
+    explanation: "Always secure the root account with MFA and avoid daily use."
   },
   {
     id: 30,
     topic: "Security and Compliance",
-    question: "Which AWS service provides security assessment of applications?",
+    question: "Which service provides centralized account management?",
     options: [
-      "AWS Shield",
-      "AWS Inspector",
-      "AWS CloudFront", 
-      "AWS Lambda",
-      "AWS RDS"
+      "AWS Organizations",
+      "AWS Budgets",
+      "AWS CloudFormation",
+      "AWS S3"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Inspector automatically assesses applications for security vulnerabilities and compliance issues."
+    marks: 15,
+    explanation: "AWS Organizations manages multiple accounts with policies and billing."
   },
   {
     id: 31,
     topic: "Security and Compliance",
-    question: "What is the purpose of AWS Secrets Manager?",
+    question: "What is encryption in transit?",
     options: [
-      "Hide AWS services",
-      "Store and manage sensitive information like passwords and API keys",
-      "Encrypt hard drives",
-      "Manage user accounts",
-      "Monitor network traffic"
+      "Protecting data while it’s transferred",
+      "Encrypting data stored on disk",
+      "Password protecting files",
+      "Compressing data"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Secrets Manager securely stores, manages, and retrieves sensitive information like database passwords and API keys."
+    marks: 0,
+    explanation: "Encryption in transit secures data moving between endpoints."
   },
   {
     id: 32,
     topic: "Security and Compliance",
-    question: "Which compliance certifications does AWS maintain? (Select TWO)",
+    question: "Which service stores and retrieves secrets securely?",
     options: [
-      "SOC 1/2/3",
-      "ISO 27001",
-      "Fast Food Safety",
-      "Driver's License",
-      "Real Estate License"
+      "AWS Secrets Manager",
+      "AWS CloudTrail",
+      "AWS WAF",
+      "AWS Glue"
     ],
-    correctAnswers: [0, 1],
-    multipleChoice: true,
-    marks: 0,
-    explanation: "AWS maintains numerous compliance certifications including SOC reports and ISO 27001 for security management."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 20,
+    explanation: "Secrets Manager securely stores API keys, passwords, and credentials."
   },
   {
     id: 33,
     topic: "Security and Compliance",
-    question: "What is AWS Artifact?",
+    question: "Which AWS service offers automated compliance checks?",
     options: [
-      "A deployment tool",
-      "A repository for AWS compliance reports and agreements",
-      "A code versioning system",
-      "A monitoring service",
-      "A backup solution"
+      "AWS Audit Manager",
+      "AWS Lambda",
+      "AWS EC2",
+      "AWS WAF"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Artifact provides on-demand access to AWS compliance reports and security documentation."
+    marks: 15,
+    explanation: "AWS Audit Manager automates compliance evidence collection."
   },
   {
     id: 34,
     topic: "Security and Compliance",
-    question: "What is the primary purpose of AWS Organizations?",
+    question: "Which compliance certifications does AWS hold? (Select TWO)",
     options: [
-      "Organize files and folders",
-      "Centrally manage multiple AWS accounts",
-      "Schedule events",
-      "Manage email lists",
-      "Organize development teams"
+      "ISO 27001",
+      "SOC 2",
+      "Food Safety",
+      "Driver’s License"
     ],
-    correctAnswers: [1],
-    multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Organizations allows central management of multiple AWS accounts with consolidated billing and policy management."
+    correctAnswers: [0, 1],
+    multipleChoice: true,
+    marks: 10,
+    explanation: "AWS meets major standards like SOC 2 and ISO 27001."
   },
   {
     id: 35,
-    topic: "Security and Compliance", 
-    question: "Which is an example of data encryption in transit?",
+    topic: "Security and Compliance",
+    question: "Which service detects account anomalies and unauthorized actions?",
     options: [
-      "Encrypting data stored on hard drives",
-      "Using HTTPS to send data over the internet",
-      "Encrypting database backups",
-      "Password protecting files",
-      "Compressing data files"
+      "AWS GuardDuty",
+      "AWS Trusted Advisor",
+      "AWS Batch",
+      "AWS ECS"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 0,
-    explanation: "Encryption in transit protects data while it moves between locations, such as using HTTPS for web traffic."
+    explanation: "GuardDuty identifies unusual activity that may indicate security issues."
   },
 
-  // Cloud Technology and Services (34% - 22 questions, 5 unscored)
+  // =======================================
+  // ⚙️ CLOUD TECHNOLOGY AND SERVICES (22)
+  // =======================================
   {
     id: 36,
     topic: "Cloud Technology and Services",
-    question: "Which AWS service is best for hosting a static website?",
+    question: "Which service provides compute capacity in AWS?",
     options: [
       "Amazon EC2",
       "Amazon S3",
-      "Amazon RDS", 
-      "Amazon Lambda",
-      "Amazon EBS"
+      "Amazon RDS",
+      "Amazon SNS"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon S3 can host static websites directly with high availability and cost-effectiveness."
+    marks: 25,
+    explanation: "Amazon EC2 provides resizable compute capacity for workloads."
   },
   {
     id: 37,
     topic: "Cloud Technology and Services",
-    question: "What are the main types of cloud computing services? (Select THREE)",
+    question: "Which AWS service is best for static website hosting?",
     options: [
-      "Infrastructure as a Service (IaaS)",
-      "Platform as a Service (PaaS)",
-      "Software as a Service (SaaS)",
-      "Database as a Service (DaaS)",
-      "Network as a Service (NaaS)"
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EC2",
+      "Amazon CloudWatch"
     ],
-    correctAnswers: [0, 1, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "IaaS, PaaS, and SaaS are the three fundamental cloud service models."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 15,
+    explanation: "S3 can host static websites directly at low cost."
   },
   {
     id: 38,
     topic: "Cloud Technology and Services",
-    question: "Which AWS service provides virtual servers in the cloud?",
+    question: "Which is a fully managed NoSQL database?",
     options: [
-      "Amazon S3",
-      "Amazon EC2",
+      "Amazon DynamoDB",
       "Amazon RDS",
-      "Amazon Lambda", 
-      "Amazon CloudFront"
+      "Amazon Aurora",
+      "Amazon S3"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Amazon EC2 (Elastic Compute Cloud) provides resizable virtual servers in AWS cloud."
+    explanation: "DynamoDB is a serverless NoSQL database for high performance."
   },
   {
     id: 39,
     topic: "Cloud Technology and Services",
-    question: "What is Amazon RDS primarily used for?",
+    question: "Which service provides content delivery?",
     options: [
-      "File storage",
-      "Managed relational databases",
-      "Content delivery",
-      "Virtual private networks",
-      "Load balancing"
+      "Amazon CloudFront",
+      "Amazon SNS",
+      "Amazon VPC",
+      "Amazon EBS"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon RDS (Relational Database Service) provides managed database services for various database engines."
+    marks: 25,
+    explanation: "CloudFront distributes content globally through edge locations."
   },
   {
     id: 40,
     topic: "Cloud Technology and Services",
-    question: "What is AWS Lambda?",
+    question: "Which AWS service provides serverless compute?",
     options: [
-      "A database service",
-      "A serverless compute service",
-      "A storage service",
-      "A networking service",
-      "A monitoring service"
+      "AWS Lambda",
+      "AWS EC2",
+      "AWS Fargate",
+      "AWS CloudTrail"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Lambda is a serverless compute service that runs code without provisioning or managing servers."
+    marks: 0,
+    explanation: "AWS Lambda runs code without managing servers."
   },
   {
     id: 41,
     topic: "Cloud Technology and Services",
-    question: "Which AWS services provide content delivery? (Select TWO)",
+    question: "Which service helps automate infrastructure deployment?",
     options: [
-      "Amazon CloudFront",
-      "Amazon S3",
-      "Amazon EC2",
-      "Amazon RDS",
-      "Global Accelerator"
+      "AWS CloudFormation",
+      "AWS S3",
+      "AWS IAM",
+      "AWS ECS"
     ],
-    correctAnswers: [0, 4],
-    multipleChoice: true,
-    marks: 0,
-    explanation: "CloudFront is a CDN service, and Global Accelerator improves application performance through AWS global network."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 20,
+    explanation: "CloudFormation enables Infrastructure as Code to manage AWS resources."
   },
   {
     id: 42,
     topic: "Cloud Technology and Services",
-    question: "What is Amazon VPC?",
+    question: "What is Amazon RDS used for?",
     options: [
-      "Virtual Private Cloud - isolated network environment",
-      "Very Powerful Computer",
-      "Video Processing Center", 
-      "Virtual Payment Card",
-      "Voice Processing Center"
+      "Managed relational databases",
+      "Data warehousing",
+      "DNS routing",
+      "Static file storage"
     ],
     correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Amazon VPC provides a logically isolated section of AWS cloud where you can launch resources in a defined virtual network."
+    explanation: "RDS provides managed relational databases like MySQL and PostgreSQL."
   },
   {
     id: 43,
     topic: "Cloud Technology and Services",
-    question: "Which AWS service is used for DNS management?",
+    question: "Which service handles DNS management?",
     options: [
-      "Amazon CloudFront",
       "Amazon Route 53",
+      "Amazon CloudFront",
       "Amazon VPC",
-      "Amazon S3",
-      "Amazon EC2"
+      "AWS IAM"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon Route 53 is a scalable DNS web service that routes traffic to AWS resources and external endpoints."
+    marks: 15,
+    explanation: "Route 53 routes internet traffic using DNS."
   },
   {
     id: 44,
     topic: "Cloud Technology and Services",
-    question: "What is the primary purpose of Amazon EBS?",
+    question: "What is the purpose of Amazon EBS?",
     options: [
-      "Email backup service",
-      "Block storage for EC2 instances",
-      "Content delivery network",
-      "Database management",
-      "User authentication"
+      "Block storage for EC2",
+      "Object storage",
+      "Message queue",
+      "Data warehouse"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon EBS (Elastic Block Store) provides persistent block storage volumes for EC2 instances."
+    marks: 25,
+    explanation: "EBS provides persistent block storage volumes for EC2."
   },
   {
     id: 45,
     topic: "Cloud Technology and Services",
-    question: "Which AWS services can be used for application load balancing? (Select TWO)",
+    question: "Which service provides message queuing?",
     options: [
-      "Application Load Balancer",
-      "Network Load Balancer",
-      "Amazon S3",
-      "Amazon RDS",
-      "Amazon Lambda"
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon SES",
+      "Amazon RDS"
     ],
-    correctAnswers: [0, 1],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "Application Load Balancer and Network Load Balancer distribute incoming traffic across multiple targets."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 0,
+    explanation: "SQS provides reliable, scalable message queuing between systems."
   },
   {
     id: 46,
     topic: "Cloud Technology and Services",
-    question: "What is Amazon CloudWatch used for?",
+    question: "Which AWS service helps monitor applications?",
     options: [
-      "Watching movies",
-      "Monitoring AWS resources and applications",
-      "Web development",
-      "File storage",
-      "Email services"
+      "Amazon CloudWatch",
+      "Amazon EC2",
+      "Amazon Cognito",
+      "AWS Batch"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "CloudWatch provides monitoring and observability for AWS resources, applications, and services."
+    marks: 25,
+    explanation: "CloudWatch monitors AWS resources, apps, and custom metrics."
   },
   {
     id: 47,
     topic: "Cloud Technology and Services",
-    question: "Which is a key feature of Amazon S3?",
+    question: "Which is a managed data warehouse service?",
     options: [
-      "Virtual servers",
-      "Object storage with 99.999999999% durability",
-      "Relational databases",
-      "Load balancing", 
-      "DNS routing"
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "Amazon RDS",
+      "Amazon S3"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon S3 provides highly durable object storage with 99.999999999% (11 9's) durability design."
+    marks: 25,
+    explanation: "Redshift is AWS’s managed, petabyte-scale data warehouse."
   },
   {
     id: 48,
     topic: "Cloud Technology and Services",
-    question: "What is AWS Auto Scaling?",
+    question: "What is AWS Auto Scaling used for?",
     options: [
-      "Automatic price scaling",
-      "Automatic resource scaling based on demand",
-      "Automatic user scaling",
-      "Automatic time scaling",
-      "Automatic location scaling"
+      "Automatically adjusting compute capacity",
+      "Monitoring IAM users",
+      "Creating CloudFormation templates",
+      "Cost estimation"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "Auto Scaling automatically adjusts the number of EC2 instances based on demand to maintain performance and optimize costs."
+    explanation: "Auto Scaling maintains application performance by adjusting resources."
   },
   {
     id: 49,
     topic: "Cloud Technology and Services",
-    question: "Which AWS service provides managed NoSQL database?",
+    question: "Which service runs Docker containers?",
     options: [
-      "Amazon RDS",
-      "Amazon DynamoDB",
-      "Amazon S3", 
-      "Amazon EC2",
-      "Amazon VPC"
+      "Amazon ECS",
+      "Amazon CloudWatch",
+      "Amazon S3",
+      "Amazon SNS"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon DynamoDB is a fully managed NoSQL database service that provides fast performance with seamless scalability."
+    marks: 15,
+    explanation: "ECS orchestrates and runs containerized applications at scale."
   },
   {
     id: 50,
     topic: "Cloud Technology and Services",
-    question: "What is the purpose of AWS Elastic Beanstalk?",
+    question: "Which AWS service allows running Kubernetes?",
     options: [
-      "Database management",
-      "Easy application deployment and management",
-      "File storage",
-      "Network security",
-      "User authentication"
+      "Amazon EKS",
+      "Amazon ECS",
+      "AWS Batch",
+      "AWS Cloud9"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 0,
-    explanation: "Elastic Beanstalk simplifies application deployment by automatically handling capacity provisioning, load balancing, and health monitoring."
+    explanation: "EKS is AWS’s managed Kubernetes service."
   },
   {
     id: 51,
     topic: "Cloud Technology and Services",
-    question: "Which AWS services provide data warehousing capabilities? (Select TWO)",
+    question: "Which AWS service helps visualize data?",
     options: [
-      "Amazon Redshift",
-      "Amazon S3",
       "Amazon QuickSight",
-      "Amazon EC2", 
-      "Amazon RDS"
+      "Amazon Redshift",
+      "Amazon Athena",
+      "AWS Glue"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
+    correctAnswers: [0],
+    multipleChoice: false,
     marks: 20,
-    explanation: "Redshift provides data warehousing, while QuickSight offers business intelligence and data visualization."
+    explanation: "QuickSight is a BI tool for creating dashboards and insights."
   },
   {
     id: 52,
     topic: "Cloud Technology and Services",
-    question: "What is Amazon SNS used for?",
+    question: "Which AWS service is used for disaster recovery?",
     options: [
-      "Social networking",
-      "Simple notification service for messaging", 
-      "Server naming service",
-      "Storage naming service",
-      "Security notification system"
+      "S3 Cross-Region Replication",
+      "EC2 Auto Scaling",
+      "CloudFront",
+      "Lambda@Edge"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon SNS (Simple Notification Service) enables sending notifications to distributed systems and mobile devices."
+    marks: 15,
+    explanation: "S3 replication provides cross-region redundancy for DR."
   },
   {
     id: 53,
     topic: "Cloud Technology and Services",
-    question: "Which is a benefit of using Amazon CloudFormation?",
+    question: "Which service is used for notifications?",
     options: [
-      "Manual resource provisioning",
-      "Infrastructure as Code deployment",
-      "Social media management",
-      "Weather forecasting",
-      "Image editing"
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon MQ",
+      "Amazon SES"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "CloudFormation enables Infrastructure as Code, allowing you to define and provision AWS resources using templates."
+    explanation: "SNS sends notifications to subscribers or applications."
   },
   {
     id: 54,
     topic: "Cloud Technology and Services",
-    question: "What is the primary use case for Amazon SQS?",
+    question: "Which is a fully managed ETL service?",
     options: [
-      "Structured Query Language processing",
-      "Simple Queue Service for message queuing",
-      "Server Quality Service", 
-      "Storage Quality Service",
-      "Security Query Service"
+      "AWS Glue",
+      "AWS Batch",
+      "AWS Lambda",
+      "AWS Cloud9"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "Amazon SQS (Simple Queue Service) provides reliable, scalable message queuing for distributed applications."
+    marks: 20,
+    explanation: "AWS Glue automates data preparation for analytics and ML."
   },
   {
     id: 55,
     topic: "Cloud Technology and Services",
-    question: "Which AWS service helps with disaster recovery?",
+    question: "Which service helps with app deployment automation?",
     options: [
-      "Amazon S3 Cross-Region Replication",
-      "Amazon EC2 only",
-      "Amazon VPC only",
-      "Amazon IAM only",
-      "Amazon Route 53 only"
+      "AWS Elastic Beanstalk",
+      "AWS Batch",
+      "AWS CodeBuild",
+      "AWS IAM"
     ],
     correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "S3 Cross-Region Replication automatically replicates data across regions for disaster recovery and compliance."
+    marks: 0,
+    explanation: "Elastic Beanstalk manages application deployment automatically."
   },
   {
     id: 56,
     topic: "Cloud Technology and Services",
-    question: "What does serverless computing mean in AWS context?",
+    question: "Which service lets you query data directly in S3?",
     options: [
-      "No servers are used",
-      "Servers are managed by AWS, not the customer",
-      "Only virtual servers",
-      "Servers without operating systems",
-      "Servers that don't serve requests"
+      "Amazon Athena",
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "Amazon SQS"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "Serverless means AWS manages the server infrastructure, allowing developers to focus on code without managing servers."
+    marks: 25,
+    explanation: "Athena allows querying S3 data using SQL syntax."
   },
   {
     id: 57,
     topic: "Cloud Technology and Services",
-    question: "Which service would you use to run containers on AWS?",
+    question: "Which AWS service provides version control for code?",
     options: [
-      "Amazon ECS",
-      "Amazon S3",
-      "Amazon RDS",
-      "Amazon Route 53",
-      "Amazon VPC"
+      "AWS CodeCommit",
+      "AWS Cloud9",
+      "AWS Glue",
+      "AWS SAM"
     ],
     correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Amazon ECS (Elastic Container Service) is a fully managed container orchestration service for running Docker containers."
+    marks: 25,
+    explanation: "CodeCommit is AWS’s managed Git-based code repository."
   },
 
-  // Billing, Pricing and Support (12% - 8 questions, 2 unscored)
+  // ==============================
+  // 💰 BILLING, PRICING & SUPPORT
+  // ==============================
   {
     id: 58,
     topic: "Billing, Pricing and Support",
-    question: "What is the AWS Free Tier?",
+    question: "Which tool estimates AWS costs before deployment?",
     options: [
-      "Free access to all AWS services forever",
-      "Free access to select AWS services for 12 months",
-      "Paid access to premium services only",
-      "Only available for students",
-      "Requires a special application process"
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Config"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Free Tier provides free access to many AWS services for 12 months for new customers, plus always-free services."
+    marks: 25,
+    explanation: "Pricing Calculator estimates monthly AWS costs."
   },
   {
     id: 59,
     topic: "Billing, Pricing and Support",
-    question: "Which AWS support plans are available? (Select THREE)",
+    question: "Which tool provides cost visualization and trends?",
     options: [
-      "Basic", 
-      "Developer",
-      "Business",
-      "Enterprise",
-      "Professional"
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Budgets",
+      "AWS CloudTrail"
     ],
-    correctAnswers: [0, 1, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "AWS offers Basic (free), Developer, Business, and Enterprise support plans with varying levels of service."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 15,
+    explanation: "Cost Explorer visualizes AWS spend and usage data."
   },
   {
     id: 60,
     topic: "Billing, Pricing and Support",
-    question: "What is the AWS pricing model based on?",
+    question: "Which AWS feature alerts you when you exceed your cost limits?",
     options: [
-      "Fixed monthly fees only",
-      "Pay-as-you-go pricing",
-      "Annual contracts only",
-      "Per-user licensing", 
-      "Flat rate for all services"
+      "AWS Budgets",
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "AWS CloudFormation"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
     marks: 20,
-    explanation: "AWS follows a pay-as-you-go pricing model where you pay only for the resources you consume."
+    explanation: "Budgets sends alerts when costs or usage exceed thresholds."
   },
   {
     id: 61,
     topic: "Billing, Pricing and Support",
-    question: "Which tool helps estimate AWS costs before deployment?",
+    question: "Which AWS service offers consolidated billing?",
     options: [
-      "AWS Cost Explorer",
-      "AWS Pricing Calculator", 
+      "AWS Organizations",
+      "AWS Budgets",
       "AWS Billing Dashboard",
-      "AWS CloudFormation",
-      "AWS Config"
+      "AWS S3"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "AWS Pricing Calculator helps estimate costs for AWS services before you start using them."
+    marks: 20,
+    explanation: "AWS Organizations consolidates billing across multiple accounts."
   },
   {
     id: 62,
     topic: "Billing, Pricing and Support",
-    question: "What is AWS Cost Explorer used for?",
+    question: "Which pricing model reduces cost for long-term workloads?",
     options: [
-      "Exploring new AWS services",
-      "Analyzing and visualizing AWS costs and usage",
-      "Finding AWS documentation",
-      "Managing user permissions",
-      "Monitoring application performance"
+      "Reserved Instances",
+      "On-Demand Instances",
+      "Spot Instances",
+      "Savings Plans"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "Cost Explorer provides detailed analysis and visualization of AWS costs and usage patterns over time."
+    marks: 0,
+    explanation: "Reserved Instances and Savings Plans provide cost benefits for long-term use."
   },
   {
     id: 63,
     topic: "Billing, Pricing and Support",
-    question: "Which factors affect AWS pricing? (Select TWO)",
+    question: "Which AWS Support Plan includes a Technical Account Manager?",
     options: [
-      "Region where services are deployed",
-      "Time of day services are used",
-      "Amount of resources consumed", 
-      "User's job title",
-      "Company size"
+      "Enterprise",
+      "Business",
+      "Developer",
+      "Basic"
     ],
-    correctAnswers: [0, 2],
-    multipleChoice: true,
-    marks: 20,
-    explanation: "AWS pricing varies by region and is based on actual resource consumption like compute time, storage used, and data transfer."
+    correctAnswers: [0],
+    multipleChoice: false,
+    marks: 25,
+    explanation: "Enterprise support includes a dedicated Technical Account Manager (TAM)."
   },
   {
     id: 64,
     topic: "Billing, Pricing and Support",
-    question: "What is the purpose of AWS Budgets?",
+    question: "Which AWS service provides recommendations for cost optimization?",
     options: [
-      "Plan AWS service features",
-      "Set cost and usage alerts",
-      "Budget employee salaries",
-      "Plan application architecture", 
-      "Schedule AWS resources"
+      "AWS Trusted Advisor",
+      "AWS Budgets",
+      "AWS CloudTrail",
+      "AWS CloudWatch"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 0,
-    explanation: "AWS Budgets allows you to set custom cost and usage budgets and receive alerts when thresholds are exceeded."
+    marks: 15,
+    explanation: "Trusted Advisor offers best-practice checks including cost optimization."
   },
   {
     id: 65,
     topic: "Billing, Pricing and Support",
-    question: "Which AWS service provides consolidated billing for multiple accounts?",
+    question: "Which type of cost is charged when transferring data between AWS Regions?",
     options: [
-      "AWS Cost Explorer",
-      "AWS Organizations",
-      "AWS Budgets",
-      "AWS CloudFormation",
-      "AWS Config"
+      "Data Transfer Out",
+      "Data Transfer In",
+      "No charge",
+      "Storage fee"
     ],
-    correctAnswers: [1],
+    correctAnswers: [0],
     multipleChoice: false,
-    marks: 20,
-    explanation: "AWS Organizations provides consolidated billing, allowing you to manage billing across multiple AWS accounts from a single master account."
+    marks: 0,
+    explanation: "AWS charges for data transfer out between regions."
   }
 ];
